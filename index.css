@@ -1,0 +1,163 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: darkcyan; /* Warm food-related color */
+    /* border-bottom: 3px solid #e07a3f; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.resName {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+.res-card:hover .resName {
+    color: #e07a3f; /* Highlighted color on hover */
+}
+
+.nav-item ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item ul li {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item ul li:hover {
+    color: cyan; /* Light yellow on hover */
+    transform: scale(1.05);
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering the cards */
+    gap: 20px; /* Adds spacing between cards */
+    padding: 20px;
+}
+
+.res-card {
+    width: 220px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.res-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.res-card img {
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    object-fit:contain;
+}
+
+.res-card h3 {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #333;
+}
+
+.res-card h4 {
+    font-size: 14px;
+    color: #666;
+    margin: 4px 0;
+}
+
+.res-card h4:last-child {
+    font-weight: bold;
+    color: darkcyan; /* Highlight delivery time */
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 82vw;
+    padding: 8px;
+    border: 2px solid darkcyan;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 8px 115px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    background: darkcyan;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-button:hover {
+    background: #006d6d;
+    transform: scale(1.1);
+}
+
+/* Shimmer */
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering the cards */
+    gap: 20px; /* Adds spacing between cards */
+    padding: 20px;
+  }
+
+  .shimmer-card {
+    width: 220px;
+    height: 250px;
+    padding: 10px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 12px;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  /* Shimmer */
