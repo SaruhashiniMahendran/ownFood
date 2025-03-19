@@ -24,7 +24,7 @@
 }
 
 .res-card:hover .resName {
-    color: #e07a3f; /* Highlighted color on hover */
+    color: darkcyan; /* Highlighted color on hover */
 }
 
 .nav-item ul {
@@ -161,3 +161,10 @@
   }
 
   /* Shimmer */
+  /* a */
+  a {
+    all: unset; /* Resets all inherited styles */
+    /* color: inherit; Resets the color */
+    /* text-decoration: none; Removes underline */
+    }
+  /* a */

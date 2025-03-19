@@ -14,4 +14,9 @@ npx parcel build index.html
   
   Whenever state Variable update React rerender the the components
   npm i react-router-dom
+
+#useEffect
+  if no dependency array => useEffect is called on every rerender
+  if dependency array is empty [] => is called on initial render (just once)
+  if dependency array is [resData] => is called everytime resData is updated
   

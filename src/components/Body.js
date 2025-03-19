@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import FOOD_DATA from "../utils/mockData";
 import { useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router";
 // https://corsproxy.io/?url=
 
 const Body = () => {
@@ -42,7 +43,9 @@ const Body = () => {
       </div>
       <div className="res-container">
         {resData.map((restaurant) => (
-          <RestaurantCard key={restaurant.id} resData={restaurant} />
+          <Link to={"/restaurants/" + restaurant.id} key={restaurant.id}>
+            <RestaurantCard resData={restaurant} />
+          </Link>
         ))}
       </div>
     </div>
