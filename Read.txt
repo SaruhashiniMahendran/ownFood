@@ -1,0 +1,22 @@
+npm init
+npm i -D parcel
+npx parcel index.html
+npx parcel build index.html
+
+"scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+
+  npm i react
+  npm i react-dom
+  
+  Whenever state Variable update React rerender the the components
+  npm i react-router-dom
+
+#useEffect
+  if no dependency array => useEffect is called on every rerender
+  if dependency array is empty [] => is called on initial render (just once)
+  if dependency array is [resData] => is called everytime resData is updated
+  
